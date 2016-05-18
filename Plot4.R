@@ -23,8 +23,8 @@ head(mydataSubsetNew$DateTime)
 #plot4
 opar<-par(no.readonly = T)
 family="mono"
-par(mfrow=c(2,2))
 png(file="plot4.png",width = 480,height = 480)
+par(mfrow=c(2,2))
 plot(mydataSubsetNew$DateTime,mydataSubsetNew$Global_active_power,type = "l",ylab = "Global Active Power",xlab = " ")
 plot(mydataSubsetNew$DateTime,mydataSubsetNew$Voltage,type = "l",xlab = "datetime",ylab = "Voltage")
 plot(mydataSubsetNew$DateTime,mydataSubsetNew$Sub_metering_1,type = "l",ylab = "Energy sub metering",xlab=" ")
